@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Movie Search App</title>
+    <link rel="icon" type="image/x-icon" href="icon.png" />
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<script>
+    function validateForm() {
+        let x = document.forms["form"]["Email"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+    }
+    document.getElementById("myButton").onclick = function () {
+        location.href = "Home.html";
+    }
+</script>
+<div class="signupFrm">
+    <form action="" class="form" onsubmit="return validateForm()" method="post">
+        <h1 class="title">Sign In</h1>
+        <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" name="Email" required>
+            <label for="" class="label">Email</label>
+        </div>
+
+        <div class="inputContainer">
+            <input type="text" class="input" placeholder="a">
+            <label for="" class="label">UserName</label>
+        </div>
+
+        <div class="inputContainer">
+            <input type="text" class="input" placeholder="a" required>
+            <label for="" class="label">Password</label>
+        </div>
+
+        <div class="inputContainer">
+            <input type="text" class="input" placeholder="a">
+            <label for="" class="label">Confirm Password</label>
+        </div>
+        <div class="button">
+            <button type="submit" onclick="location.href = 'Home.html';" id="myButton">
+                SignIn
+            </button>
+        </div>
+
+    </form>
+</div>
+
+</html>
